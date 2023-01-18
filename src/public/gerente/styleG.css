@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(33, 144, 255);
+}
+
+main {
+    width: 95%;
+    height: 54em;
+    margin: 2% auto;
+    background-color: whitesmoke;
+    border-radius: 14px;
+}
