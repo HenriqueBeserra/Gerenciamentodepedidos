@@ -1,2 +1,4 @@
 # Gerenciamentodepedidos
-App de gerenciamento de pedidos
+App de gerenciamento de pedidos exclusivo para os diretores da SERP. 
+
+
