@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(33, 144, 255);
+}
+
+main {
+    width: 90%;
+    height: 49em;
+    margin: 4% auto;
+    background-color: whitesmoke;
+    border-radius: 14px;
+}
+
+main > section {
+    width: 19%;
+    margin: 14px auto;
+}
+
+.user {
+    
+    border-left: 0.4px solid  rgba(128, 128, 128, 0.35);
+    border-right: 0.4px solid  rgba(128, 128, 128, 0.35);
+}
+
+section > img {
+    width: 20em;
+    
+}
+
+.user > h1 {
+    font-size: 3.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    color: rgb(66, 66, 66);
+}
+
+.user > ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    align-items: center;
+    justify-content: center;
+}
+
+li > a {
+    text-decoration: none;
+    color: green;
+    padding: 12px;
+}
+
+li:hover, li > a:hover {
+    color: rgb(221, 91, 15);
+    transform: translateY(-2px);
+    transition: 0.87s;
+}
+
+.user-list > li {
+    width: 4em;
+    font-size: 2em;
+    margin: 12px;
+    padding: 12px;
+    border-bottom: 1px solid gray;
+    border-radius: 1px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+li > img {
+    width: 4em;
+    position: relative;
+    left: -5em;
+    bottom: 1em;
+    margin-top: 90px;
+}
