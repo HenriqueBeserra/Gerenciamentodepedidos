@@ -9,23 +9,99 @@
     <link rel="stylesheet" href="./styleG.css">
 </head>
 <body>
+    
     <main>
         <header class="header">
+            
             <h1>SGS ¨ GERENTE</h1>
             <img src="../view/Design sem nome (5).png" alt="">
             
             <ul class="bt-list">
-                <li><button>Criar pedidos</button></li>
-                <li><button>Lista de pedidos</button></li>
-                <li><button>Produção</button></li>
-                <li><button>Projeção</button></li>
+                
+                <li><button onclick="openModal()" id="criarPedido"><i class="fa-solid fa-plus" style="width: 40px;"></i>Criar pedidos</button></li>
+                <li><button><i class="fa-solid fa-bars" style="width: 40px;"></i>Lista de pedidos</button></li>
+                <li><button><i class="fa-solid fa-layer-group" style="width: 40px;"></i>Produção</button></li>
+                <li><button><i class="fa-solid fa-chart-simple" style="width: 40px;"></i>Projeção</button></li>
 
              </ul>
         </header>
 
         <section class="main-content">
+         <!-- Section responsável por receber os conteúdos pelo javascript e gerar um pedido  -->
+            
+            <div class="headerPedidos">
+
+                <ul>
+                    <li>N pedido</li>
+                    <li>Revista</li>
+                    <li>Emissão do pedido</li>
+                </ul>
+                <ul class="pedidosList">
+                    
+                    <li>
+
+                    </li>
                 
+                </ul>
+                
+            </div>
         </section>
+
+        <!-- Modal de inserção de pedidos -->
+        <div  class="modal " >
+            
+            <div class="formulario-titulo">
+                <h2>Ordem de pedido</h2>
+            </div>
+            
+            <fieldset class="fieldset1">
+                
+                <label for=""> Número do pedido: 2 </label><p class="numPedido"></p>
+                <label for="">Nome da empresa: Gráfica serp</label>
+                <label for=""></label>
+                
+            </fieldset>
+            
+            <form class="formulário-pedidos">
+
+                <legend for="revista">Revista</legend>
+                <select name="" id="revista">
+                    
+                    <option value="plano de Deus" id="plano de Deus">O plano de Deus </option>
+                    <option value="Fazei Discipulos" id="Fazei Discipulos">Fazei Discipulos</option>
+                    <option value="Criação pela palavra" id="Criação pela palavra">Criação pela palavra</option>
+                    <option value="Chamado de Deus para Juventude">Chamado de Deus para Juventude</option>
+                    <option value="Jovens intimos de Deus">Íntimos de Deus</option>
+                    <option value="Você e jesus">Você e jesus</option>
+                    <option value="Jovem e a bíblia">Jovem e a bíblia</option>
+                    <option value="Servir">Servir</option>
+
+                </select>
+
+                <label for="quantidade">Quantidade de revistas</label>
+                <input type="number" placeholder="Ex: 12" name="inputQnt" id="quantidade" required>
+
+                <label for="dataPedido">Data atual</label>
+                <input type="date" id="dataPedido" required>
+
+                <legend class='emissor' for="Emissor">Emissor do pedido</legend>
+                <select id="emissor" name="" id="Emissor">
+                    
+                    <option value="Valtemir" id="Valtemir">Valtemir </option>
+                    <option value="Nivanildo" id="Nivanildo">Nivanildo</option>
+                    
+
+                </select>
+
+                <button id="criar"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                
+            </form>
+
+        </div>
+
     </main>
+    <script src="https://kit.fontawesome.com/5fbafbfbf8.js" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
+                
