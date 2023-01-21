@@ -19,7 +19,7 @@
             <ul class="bt-list">
                 
                 <li><button onclick="openModal()" id="criarPedido"><i class="fa-solid fa-plus" style="width: 40px;"></i>Criar pedidos</button></li>
-                <li><button><i class="fa-solid fa-bars" style="width: 40px;"></i>Lista de pedidos</button></li>
+                <li><a href="./indexG.html"><button><i class="fa-solid fa-bars" style="width: 40px;"></i>Lista de pedidos</button></a></li>
                 <li><button><i class="fa-solid fa-layer-group" style="width: 40px;"></i>Produção</button></li>
                 <li><button><i class="fa-solid fa-chart-simple" style="width: 40px;"></i>Projeção</button></li>
 
@@ -31,17 +31,14 @@
             
             <div class="headerPedidos">
 
-                <ul>
-                    <li>N pedido</li>
+                <ul class="header-pedidos">
+                    <li>N pedido / Id</li>
                     <li>Revista</li>
+                    <li>Quantidade</li>
                     <li>Emissão do pedido</li>
-                </ul>
-                <ul class="pedidosList">
-                    
-                    <li>
-
-                    </li>
-                
+                    <li>Emissor</li>
+                    <li>Destinatário</li>
+                    <li>Valor do pedido</li>
                 </ul>
                 
             </div>
@@ -76,7 +73,7 @@
                     <option value="Jovem e a bíblia">Jovem e a bíblia</option>
                     <option value="Servir">Servir</option>
 
-                </select>
+                </select>   
 
                 <label for="quantidade">Quantidade de revistas</label>
                 <input type="number" placeholder="Ex: 12" name="inputQnt" id="quantidade" required>

@@ -52,13 +52,14 @@ header > img {
     border-bottom: 1px solid rgba(128, 128, 128, 0.426);
 }
 
-li > button {
+li > button,  a > button {
     background-color: #f5f5f5;
     border: none;
     font-size: 20px;
 }
 
-li > button:hover {
+
+li > button:hover, a > button:hover{
     color: orangered;
     transition: 0.4s;
     transform: translateY(-2px);
@@ -91,11 +92,9 @@ li > button:hover {
     filter: none;
 }
 
-.active2 {
-    filter: blur(0.8px);
-}
 
-.teste {
+
+.teste{
     font-size: 2em;
 }
 
@@ -155,4 +154,36 @@ form > select, form > input {
     background-color: rgb(66, 87, 65);
     color: azure;
     transition: 0.6s;
+}
+
+.headerPedidos {
+    width: 90%;
+    height: 75%;
+    position: absolute;
+    top: 8.6em;
+    left: 5%;
+    border-top: 4px solid gray;
+    background-color: rgb(255, 255, 255);
+    border-radius:20px ;
+}
+
+.header-pedidos {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-around;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.986);
+}
+
+.pedidosList {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-around;
+    border-bottom: 0.2px solid rgba(128, 128, 128, 0.311);
 }
