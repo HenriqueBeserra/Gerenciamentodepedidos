@@ -75,10 +75,10 @@ li > button:hover, a > button:hover{
 
 .modal {
     position: absolute;
-    width: 35%;
-    height: 64%;
+    width: 50%;
+    height: 65%;
     background-color: rgb(16, 158, 38);
-    left: 34%;
+    left: 26%;
     top: 20%;
     box-shadow: 0px 0px 4px 1px black;
     border-radius: 15px;
@@ -101,13 +101,14 @@ li > button:hover, a > button:hover{
 
 .formulario-titulo {
     font-size: 2.8em;
-    margin: 40px;
+    margin: 20px 40px;
     font-weight: 600;
 }
 
 .fieldset1 {
     font-size: 24px;
-    margin: 5px 40px;
+    margin: 20px 40px;
+    margin-bottom: 50px;
     font-weight: 900;
     display: flex;
     gap: 15px;
@@ -130,14 +131,19 @@ form > select, form > input {
     color: rgb(131, 46, 0);
 }
 
-.emissor, #emissor{
+.emissor, #emissor, #Recebedor, .recebedor{
     position: relative;
-    top: -10.2em;
+    top: -10.04em;
     left: 55%;
+    margin-left: 15px;
+}
+
+#Recebedor {
+    margin-top: -9.8em;
 }
 
 #emissor  {
-    top: -20em;
+    top: -19.8em;
 }
 
 #criar {
@@ -146,7 +152,7 @@ form > select, form > input {
     height: 40px;
     background-color: rgb(232, 232, 232);
     position: relative;
-    top: -9em;
+    top: -4em;
     
 }
 
@@ -157,14 +163,33 @@ form > select, form > input {
 }
 
 .headerPedidos {
+    font-size: 20px;
     width: 90%;
     height: 75%;
     position: absolute;
-    top: 8.6em;
+    top: 7em;
     left: 5%;
     border-top: 4px solid gray;
     background-color: rgb(255, 255, 255);
     border-radius:20px ;
+    overflow-y: scroll;
+
+}
+
+.headerPedidos::-webkit-scrollbar {
+    width: 10px;
+    height: 3px; /* A altura só é vista quando a rolagem é horizontal */
+    transform:rotate(-100deg);
+}
+
+.headerPedidos::-webkit-scrollbar-track {
+    padding: 2px;
+    background-color: rgb(199, 202, 200);
+}
+
+.headerPedidos::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgb(0, 38, 61);
 }
 
 .header-pedidos {
@@ -186,4 +211,9 @@ form > select, form > input {
     align-items: center;
     justify-content:space-around;
     border-bottom: 0.2px solid rgba(128, 128, 128, 0.311);
+}
+
+#qnt {
+    font-size: 31px;
+    
 }
