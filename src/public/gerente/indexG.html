@@ -18,9 +18,9 @@
             
             <ul class="bt-list">
                 
-                <li><button onclick="openModal()" id="criarPedido"><i class="fa-solid fa-plus" style="width: 40px;"></i>Criar pedidos</button></li>
-                <li><a href="./indexG.html"><button><i class="fa-solid fa-bars" style="width: 40px;"></i>Lista de pedidos</button></a></li>
-                <li><button><i class="fa-solid fa-layer-group" style="width: 40px;"></i>Produção</button></li>
+                <li><button  id="criarPedido"><i class="fa-solid fa-plus" style="width: 40px;"></i>Criar pedidos</button></li>
+                <li><button onclick="loadLista()" ><i class="fa-solid fa-bars" style="width: 40px;"></i>Lista de pedidos</button></li>
+                <li><button onclick="produção()" ><i class="fa-solid fa-layer-group" style="width: 40px;"></i>Produção</button></li>
                 <li><button><i class="fa-solid fa-chart-simple" style="width: 40px;"></i>Projeção</button></li>
 
              </ul>
@@ -32,7 +32,7 @@
             <div class="headerPedidos">
 
                 <ul class="header-pedidos">
-                    <li>N pedido / Id</li>
+                    
                     <li>Revista</li>
                     <li>Quantidade</li>
                     <li>Emissão do pedido</li>
@@ -40,6 +40,7 @@
                     <li>Destinatário</li>
                     <li>Valor do pedido</li>
                 </ul>
+                
                 
             </div>
         </section>
@@ -53,7 +54,7 @@
             
             <fieldset class="fieldset1">
                 
-                <label for=""> Número do pedido: 2 </label><p class="numPedido"></p>
+                </label><p class="numPedido"></p>
                 <label for="">Nome da empresa: Gráfica serp</label>
                 <label for=""></label>
                 
@@ -64,7 +65,7 @@
                 <legend for="revista">Revista</legend>
                 <select name="" id="revista">
                     
-                    <option value="plano de Deus" id="plano de Deus">O plano de Deus </option>
+                    <option value="Plano de Deus" id="plano de Deus">O plano de Deus </option>
                     <option value="Fazei Discipulos" id="Fazei Discipulos">Fazei Discipulos</option>
                     <option value="Criação pela palavra" id="Criação pela palavra">Criação pela palavra</option>
                     <option value="Chamado de Deus para Juventude">Chamado de Deus para Juventude</option>
@@ -75,11 +76,11 @@
 
                 </select>   
 
-                <label for="quantidade">Quantidade de revistas</label>
-                <input type="number" placeholder="Ex: 12" name="inputQnt" id="quantidade" required>
+                <label id="qnt" for="quantidade">Quantidade de revistas</label>
+                <input class="input" type="number" placeholder="Ex: 12" name="inputQnt" id="quantidade" required>
 
                 <label for="dataPedido">Data atual</label>
-                <input type="date" id="dataPedido" required>
+                <input type="date"  id="dataPedido" required>
 
                 <legend class='emissor' for="Emissor">Emissor do pedido</legend>
                 <select id="emissor" name="" id="Emissor">
@@ -90,7 +91,10 @@
 
                 </select>
 
-                <button id="criar"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+                <label class='recebedor' for="Recebedor"> Recebedor</label>
+                <input type="text" placeholder="Ex: Ponte dos Carvalhos" id="Recebedor" required>
+
+                <button  id="criar"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
                 
             </form>
 
@@ -98,8 +102,8 @@
 
     </main>
     <script src="https://kit.fontawesome.com/5fbafbfbf8.js" crossorigin="anonymous"></script>
-    <script src="./app.js" ></script>
-
+    <script src="./app.js" type="module"></script>
+    
     
 
 </body>
